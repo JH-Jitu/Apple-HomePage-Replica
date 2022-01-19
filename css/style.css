@@ -1,0 +1,171 @@
+body {
+  /* font-family: "SF Mono", sans-serif; */
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  margin: 0;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#navbar {
+  color: white;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(2rem);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#navbar > ul {
+  font-size: 12px;
+  list-style-type: none;
+  height: 40px;
+  /* padding: 15px; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+#navbar > ul > li {
+  display: inline;
+  margin: 0px 20px;
+  opacity: 0.8;
+}
+#navbar > ul > li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.logo {
+  background: url("../images/icons/apple.svg");
+}
+.search {
+  background: url("../images/icons/search.svg");
+}
+.bag {
+  background: url("../images/icons/bag.svg");
+}
+.logo,
+.bag,
+.search {
+  width: 20px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Content Part */
+
+#contents {
+  grid-column: 1 / -1;
+
+  margin-top: 40px;
+}
+
+#contents > .notice {
+  padding: 10px;
+  background-color: #ecfaf8;
+  font-size: 13px;
+  text-align: center;
+}
+
+.iPhone-13-pro {
+  background: url("../images/iphone13pro.jpg");
+}
+.iPhone-13 {
+  background: url("../images/iphone13.jpg");
+}
+.watch {
+  background: url("../images/watch.jpg");
+}
+
+.macbook {
+  background: url("../images/macbook14.png");
+}
+
+.airpod {
+  background: url("../images/airpod.jpeg");
+}
+.homepod {
+  background: url("../images/homepod.jpeg");
+}
+.appleCard {
+  background: url("../images/applecard.png");
+}
+.appleTv {
+  background: url("../images/appletv.jpeg");
+}
+
+.iPhone {
+  height: 70vh;
+  background-size: auto 80rem;
+  background-repeat: no-repeat;
+  vertical-align: auto;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 15px;
+}
+.title a {
+  text-decoration: none;
+  color: rgb(95, 95, 253);
+}
+.text-dark {
+  color: black;
+}
+.text-light {
+  color: white;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 10px;
+}
+.product {
+  margin-bottom: 10px;
+}
+.airpod > .title {
+  height: 80%;
+  display: grid;
+  align-content: flex-end;
+}
+
+.appleCard > .title {
+  height: 60%;
+  display: grid;
+  align-content: center;
+}
+
+.product {
+  height: 60vh;
+  /* width: 100%; */
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  vertical-align: auto;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+#footer {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 600px) and (max-device-width: 1400px) {
+  .iPhone {
+    height: 100vh;
+    background-size: auto 75rem;
+  }
+
+  .product {
+    height: 75vh;
+  }
+}
